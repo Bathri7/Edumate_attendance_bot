@@ -14,7 +14,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Configuration
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8568757589:AAFKrK_4ljcd6k1Wv7TJMUXoqY6NPqavRm0")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "Paste the tocken here !!")
 USERS_FILE = "users.json"
 
 # State constants
@@ -162,7 +162,7 @@ def main():
     application.add_handler(CommandHandler("attendance", attendance_command))
     application.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
 
-    print("Multi-user bot is running...")
+    print("Edumate bot is running...")
     application.run_polling()
 
 if __name__ == '__main__':
